@@ -1,0 +1,26 @@
+#!/bin/bash
+
+SECONDS=0
+start=0
+
+[[ -e log.txt ]] || echo > log.txt "$SECONDS"
+
+SPOILER="I watched Avengers: Endgame. Thanos will d..."
+
+while ((1))
+do
+	if [[ $start != $SECONDS ]]
+	then
+		echo "$SECONDS"
+		echo >> log.txt "$SECONDS"
+		start=$SECONDS
+		
+		RAND=$RANDOM
+		if [[ $((RAND%3)) -eq 0 ]]
+		then
+			echo $SPOILER
+			echo >> log.txt "$SPOILER"
+		fi
+	fi
+done
+
