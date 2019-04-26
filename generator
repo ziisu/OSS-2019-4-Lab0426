@@ -9,6 +9,7 @@ SPOILER="I watched Avengers: Endgame. Thanos d**s..."
 
 while ((1))
 do
+	sleep 2
 	if [[ $start != $SECONDS ]]
 	then
 		echo "$SECONDS"
