@@ -5,7 +5,7 @@ start=0
 
 [[ -e log.txt ]] || echo > log.txt "$SECONDS"
 
-SPOILER="I watched Avengers: Endgame. Thanos will d..."
+SPOILER="I watched Avengers: Endgame. Thanos dies..."
 
 while ((1))
 do
